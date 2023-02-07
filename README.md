@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://nahuelef.github.io/card-component/)
+- Solution URL: [https://nahuelef.github.io/card-component/]
 
 ## My process
 
@@ -41,5 +41,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@NahuelEF](https://www.frontendmentor.io/profile/NahuelEF)
