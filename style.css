@@ -19,18 +19,19 @@ body {
   background-color: var(--cream);
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .section {
-  width: 600px;
+  max-width: 600px;
+  margin: 0.5em;
   background-color: var(--white);
   border-radius: 12px;
   overflow: hidden;
 
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -38,7 +39,7 @@ body {
   width: 50%;
 }
 
-.container {
+.information {
   width: 50%;
   padding: 2em;
   color: var(--dark-grayish-blue);
@@ -51,13 +52,13 @@ body {
   justify-content: space-between;
 }
 
-.container__subtitle {
+.information__subtitle {
   margin-bottom: var(--margin-bottom);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
-.container__title {
+.information__title {
   margin-bottom: var(--margin-bottom);
   color: var(--very-dark-blue);
   font-family: "Fraunces", serif;
@@ -65,32 +66,34 @@ body {
   line-height: 1;
 }
 
-.container__paragraph {
+.information__paragraph {
   margin-bottom: var(--margin-bottom);
   line-height: 1.5;
 }
 
-.container__prices {
+.information__prices {
   margin-bottom: var(--margin-bottom);
+
   display: flex;
   align-items: center;
 }
 
-.container__actual-price {
-  margin-right: 0.5em;
+.information__actual-price {
+  margin-right: 12px;
   color: var(--dark-cyan);
   font-family: "Fraunces", serif;
   font-size: 2.5em;
 }
 
-.container__previous-price {
+.information__previous-price {
   text-decoration: line-through;
 }
 
-.container__button {
+.information__button {
+  width: 100%;
   padding: 1em;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   background-color: var(--dark-cyan);
   color: var(--white);
   font-family: "Montserrat", sans-serif;
@@ -104,6 +107,31 @@ body {
   gap: 1em;
 }
 
-.container__button:active {
+.information__button:active {
   background-color: hsl(158, 36%, 27%);
+}
+
+.attribution {
+  width: 100%;
+  margin: 1em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    width: 100vw;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section__image {
+    width: 100%;
+    content: url(./images/image-product-mobile.jpg);
+  }
+  .information {
+    width: 100%;
+  }
 }
